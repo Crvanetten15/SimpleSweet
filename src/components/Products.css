@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-brown: #804D2D;
+    --light-pink: #FFD3DF;
+    --normal-pink: #FF8CC6;
+    --dark-pink: #B8217E;
+  
+    --text-colored: #FF8CC6;
+    --text-plain: #131313;
+    --text-light: #5a5757;
+
+    --shadow: #F6f6f6;
+
+    --font-fancy: 'Style Script', cursive;
+    --font-read: 'Noto Serif', serif; 
+
+    --goat-box: 0 3px 10px rgb(0 0 0 / 0.2);
+
+
+
+    --image1: 'src/images/stock1.jpg';
+    --image2: 'src/images/stock10.jpg';
+    --image3: 'src/images/stock9.jpg';
+  }
+
+.title-1 {
+    
+    color: var(--dark-pink);
+    font-size: 100px;
+    font-weight: 400;
+    padding-top: 25px;
+    font-family: var(--font-fancy);
+    margin: 0 auto;
+    text-align: center;
+  
+    text-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.under-title-1 {
+    color: var(--text-light);
+    width: 70%;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+.img-card {
+    height: 350px;
+    width: 100%;
+    background-color: #804D2D;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+
+.high-items {
+
+    margin-right: 45px;
+    box-shadow: var(--goat-box);
+    height: 500px;
+    width: 300px;
+}
+
+.high-items:hover {
+    border: #FF8CC6 2px solid;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.item-cat {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 600;
+    padding: 7px;
+}
+
+.feat-title {
+    color: var(--text-plain);
+    font-weight: 600;
+    font-size: larger;
+    padding-left: 7px;
+    padding-top: 7px;
+}
+
+.feat-comment {
+    color: var(--text-light);
+    font-weight: 200;
+    font-size: larger;
+    padding-left: 7px;
+}
+
+.feat-price {
+    color: var(--text-plain);
+    width: 96%;
+    text-align: right;
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+#feat_img1{
+    background-image: url(../images/stock1.jpg);
+    background-size: cover;
+}
+
+#feat_img2{
+    background-image: url(../images/stock10.jpg);
+    background-size: cover;
+}
+
+#feat_img3{
+    background-image: url(../images/stock9.jpg);
+    background-size: cover;
+}
+
+#stop {
+    margin-right: 0;
+}

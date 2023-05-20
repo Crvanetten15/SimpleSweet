@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-brown: #804D2D;
+    --light-pink: #FFD3DF;
+    --normal-pink: #FF8CC6;
+    --dark-pink: #B8217E;
+  
+    --text-colored: #FF8CC6;
+    --text-plain: #131313;
+    --text-light: #5a5757;
+
+    --shadow: #F6f6f6;
+
+    --font-fancy: 'Style Script', cursive;
+    --font-read: 'Noto Serif', serif; 
+
+    --goat-box: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+/* .services {
+    display: grid;
+
+}
+
+.service-item {
+    width: 100px;
+    height: 100px;
+    border: #B8217E 1px solid;
+} */
+
+.services {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.service-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    /* text-align: center; */
+    overflow-y: hidden;
+}
+
+.service-title {
+    font-family: var(--font-read);
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 7px;
+    padding-left: 7px;
+
+}
+
+.descript {
+    padding-top: 7px;
+    padding-left: 7px;
+    font-family: var(--font-read);
+    
+}
+
+#service-button {
+    
+}
+
+#wrapper-service {
+    margin: 0 auto;
+}
+
+.title-2 {
+    color: var(--dark-pink);
+    font-size: 100px;
+    font-weight: 400;
+    padding-top: 25px;
+    font-family: var(--font-fancy);
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
