@@ -1,9 +1,9 @@
 import './App.css';
 
 // Components Needed for importing 
-import Header from './components/Header.js';
-import Home from './components/Home.js';
-import Footer from './components/Footer.js';
+import Header from './components/Header.jsx';
+import Home from './components/Home.jsx';
+import Footer from './components/Footer.jsx';
 import Gallery from "./components/PhotoGallery";
 function App() {
   // const images = [
