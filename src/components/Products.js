@@ -26,9 +26,9 @@ function Products() {
             <div className='feat-comment'>
                 I love to eat these!
             </div>
-            <div className='feat-price'>
+            {/* <div className='feat-price'>
                 1.99
-            </div>
+            </div> */}
         </div>
         <div className='high-items'>
             <div  id='feat_img2' className='img-card'>
@@ -43,9 +43,9 @@ function Products() {
             <div className='feat-comment'>
                 These are good cookies
             </div>
-            <div className='feat-price'>
+            {/* <div className='feat-price'>
                 2.99
-            </div>
+            </div> */}
         </div>
         <div className='high-items' id='stop'>
             <div id='feat_img3' className='img-card'>
@@ -60,9 +60,9 @@ function Products() {
             <div className='feat-comment'>
                 I would spend money on these
             </div>
-            <div className='feat-price'>
+            {/* <div className='feat-price'>
                 12.99
-            </div>
+            </div> */}
         </div>
     </div>
     </>

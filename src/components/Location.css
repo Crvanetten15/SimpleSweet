@@ -36,19 +36,20 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 30px;
     margin: 0 auto;
     max-width: 70%;
 }
 
 .service-item {
-    background-color: #f1f1f1;
+    background-color: var(--light-pink);
     padding: 10px;
     height: 0;
     padding-bottom: 100%;
     position: relative;
     /* text-align: center; */
     overflow-y: hidden;
+    box-shadow: var(--goat-box);
 }
 
 .service-title {
@@ -57,13 +58,14 @@
     font-weight: 700;
     padding-top: 7px;
     padding-left: 7px;
-
+    color: var(--main-brown);
 }
 
 .descript {
     padding-top: 7px;
     padding-left: 7px;
     font-family: var(--font-read);
+    color: var(--text-plain);
     
 }
 
