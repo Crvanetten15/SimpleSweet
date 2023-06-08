@@ -1,34 +1,41 @@
-import './App.css';
 
-// Components Needed for importing 
-import Header from './components/Header.jsx';
-import Home from './components/Home.jsx';
-import Footer from './components/Footer.jsx';
-import Gallery from "./components/PhotoGallery";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Nav from './components/Nav.jsx';
+import Home from './pages/Home.jsx';
+import Gallery from "./pages/Gallery.jsx";
+import PageNotFound from './pages/PageNotFound.jsx';
+import Footer from "./components/Footer.jsx";
+
 function App() {
-  // const images = [
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 1" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock2.jpg", alt: "Image 2" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock3.jpg", alt: "Image 3" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 1" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 2" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 3" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 1" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 2" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 3" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 1" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 2" },
-  //   { src: process.env.PUBLIC_URL + "/images/stock1.jpg", alt: "Image 3" },
-  //   // Add more image objects as needed
-  // ];
+
   return (
     <>
-      <Header />
-      <Home />
-      <Footer />
-      {/* <Gallery images={images}/> */}
+    <Router>
+        <Nav />
+        <div className="container">
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+            <Route path="*" element={<PageNotFound />} />
+        </Routes>
+        </div>
+        
+        <Footer />
+    </Router>
+    
+    
+    
     </>
+
   );
+
 }
 
 export default App;

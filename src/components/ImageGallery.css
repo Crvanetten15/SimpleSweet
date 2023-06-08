@@ -1,0 +1,37 @@
+:root {
+  --main-brown: #804D2D;
+  --light-pink: #FFD3DF;
+  --normal-pink: #FF8CC6;
+  --dark-pink: #B8217E;
+
+  --text-colored: #FF8CC6;
+  --text-plain: #131313;
+}
+
+#gallery-main {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: transform .4s;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
